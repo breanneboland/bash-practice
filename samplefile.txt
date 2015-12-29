@@ -1,0 +1,4 @@
+Here's some text to copy. 
+This is a second line of text from the original file. 
+Anything added after here is something I did with bash. 
+
