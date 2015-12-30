@@ -1,3 +1,12 @@
 #!/bin/bash
 
-word-list=$'\n' read -d '' -r -a lines < ./short-word-list.txt
+WordArray=( `cat "short-word-list.txt"` )
+
+# echo ${WordArray[@]}
+
+for word in "${WordArray[@]}"
+do
+	echo $word
+done
+
+echo "Those are the words, yay!"

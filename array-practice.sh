@@ -36,6 +36,8 @@ OtherSampleArray=(${OtherSampleArray[@]:0:$pos} ${OtherSampleArray[@]:($pos + 1)
 
 echo ${OtherSampleArray[@]} #Haha, it wasn't working because the array was too short. 
 
+FilteredArray=( ${OtherSampleArray[@]/eh*/} )
+echo ${FilteredArray[@]}
 
 
 
