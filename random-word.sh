@@ -1,19 +1,16 @@
 #!/bin/bash
 
-WordArray=( `cat "shorter-words.txt"` )
+set -euo pipefail
+set -x
 
-# echo ${WordArray[@]}
+readonly word_array=( `cat shorter-words.txt` )
 
-# for word in "${WordArray[@]}"
+# for word in "${word_array[@]}"
 # do
 # 	echo $word
 # done
 
-# echo "Those are the words, yay!"
-
-# WordIndex=$(( ( RANDOM % 10 )  + 1 ))
-
-ListLength=${#WordArray[@]}
+readonly list_length=${#word_array[@]} 
 # echo "List length: $ListLength"
-RandomIndex=$(( ( RANDOM % ListLength )  + 1 ))
-echo ${WordArray[RandomIndex]}
+random_index=$(( ( RANDOM % list_length ) + 1 ))
+echo ${word_array[random_index]}
