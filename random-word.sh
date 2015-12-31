@@ -3,7 +3,7 @@
 set -euo pipefail
 set -x
 
-readonly word_array=( `cat shorter-words.txt` )
+readonly word_array=( $( cat shorter-words.txt ) )
 
 # for word in "${word_array[@]}"
 # do
