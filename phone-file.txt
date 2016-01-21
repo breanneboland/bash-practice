@@ -1,0 +1,6 @@
+This is not a phone number: 222
+This could be a phone number: 206-333-4039
+This is not an email address: @@.com
+This could be an email address: rando@pretend.com
+This is not a website: hoopla.woowoo
+This is a website: http://www.theentireinternet.com
